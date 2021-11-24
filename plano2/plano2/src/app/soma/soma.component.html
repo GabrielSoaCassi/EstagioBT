@@ -1,0 +1,28 @@
+<div class="form">
+  <form>
+    <label class="legenda">Teste Soma</label>
+    <input
+      type="number"
+      name="numero1"
+      id="numero1"
+      class="input-form"
+      [(ngModel)]="numero1"
+    />
+    <input
+      type="number"
+      name="numero2"
+      id="numero2"
+      class="input-form"
+      [(ngModel)]="numero2"
+    />
+  </form>
+  <div class="resultado" *ngIf="numero1 && numero2; else ColocarNumeros">
+    <p class="resultado">
+      {{ numero1 }}+{{ numero2 }} = {{ soma(numero1, numero2) }}
+    </p>
+  </div>
+</div>
+
+<ng-template #ColocarNumeros>
+  <p class="erro">Digite um número válido</p>
+</ng-template>

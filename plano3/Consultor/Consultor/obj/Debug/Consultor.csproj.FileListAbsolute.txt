@@ -1,0 +1,14 @@
+C:\Users\GabrielSoaresBomtrat\source\repos\Consultor\Consultor\bin\Debug\Consultor.exe.config
+C:\Users\GabrielSoaresBomtrat\source\repos\Consultor\Consultor\bin\Debug\Consultor.exe
+C:\Users\GabrielSoaresBomtrat\source\repos\Consultor\Consultor\bin\Debug\Consultor.pdb
+C:\Users\GabrielSoaresBomtrat\source\repos\Consultor\Consultor\obj\Debug\Consultor.csproj.AssemblyReference.cache
+C:\Users\GabrielSoaresBomtrat\source\repos\Consultor\Consultor\obj\Debug\Consultor.csproj.CoreCompileInputs.cache
+C:\Users\GabrielSoaresBomtrat\source\repos\Consultor\Consultor\obj\Debug\Consultor.exe
+C:\Users\GabrielSoaresBomtrat\source\repos\Consultor\Consultor\obj\Debug\Consultor.pdb
+C:\Users\GabrielSoaresBomtrat\Documents\projeto\estagio_gabrielsoares\plano3\Consultor\Consultor\bin\Debug\Consultor.exe.config
+C:\Users\GabrielSoaresBomtrat\Documents\projeto\estagio_gabrielsoares\plano3\Consultor\Consultor\bin\Debug\Consultor.exe
+C:\Users\GabrielSoaresBomtrat\Documents\projeto\estagio_gabrielsoares\plano3\Consultor\Consultor\bin\Debug\Consultor.pdb
+C:\Users\GabrielSoaresBomtrat\Documents\projeto\estagio_gabrielsoares\plano3\Consultor\Consultor\obj\Debug\Consultor.csproj.AssemblyReference.cache
+C:\Users\GabrielSoaresBomtrat\Documents\projeto\estagio_gabrielsoares\plano3\Consultor\Consultor\obj\Debug\Consultor.csproj.CoreCompileInputs.cache
+C:\Users\GabrielSoaresBomtrat\Documents\projeto\estagio_gabrielsoares\plano3\Consultor\Consultor\obj\Debug\Consultor.exe
+C:\Users\GabrielSoaresBomtrat\Documents\projeto\estagio_gabrielsoares\plano3\Consultor\Consultor\obj\Debug\Consultor.pdb

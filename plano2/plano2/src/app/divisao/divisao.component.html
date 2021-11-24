@@ -1,0 +1,81 @@
+<div class="container">
+  <div class="divisao-calculo">
+    <div class="centralizador">
+      <form class="form">
+        <label class="campo-form" for="dividendo">Dividendo</label>
+        <input
+          type="number"
+          name="dividendo"
+          id="dividendo"
+          class="input-form"
+          [(ngModel)]="dividendo"
+          required
+        />
+
+        <label class="campo-form" for="divisor">Divisor</label>
+        <input
+          type="number"
+          name="divisor"
+          id="divisor"
+          class="input-form"
+          [(ngModel)]="divisor"
+          required
+        />
+      </form>
+      <div
+        class="resultado"
+        *ngIf="(dividendo != null && divisor != 0); else ColocarNumeros"
+      >
+        <p>{{ dividendo }}/{{ divisor }} = {{ dividir(dividendo, divisor) }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="divisao-conteudo">
+    <h1 class="titulo">Divisão</h1>
+
+    <p class="conteudo">
+      Divisão é uma operação matemática inversa da multiplicação. O ato de
+      dividir por algum elemento de um conjunto só vaz sentido quando a
+      multiplicação por aquele elemento for uma função bijetora (Onde ela
+      retorna somente um resultado para cada operador) tomaremos como base
+      apenas o conjunto dos números racionais representado pela letra "Q" caso
+      não saiba sobre conjuntos númericos de uma olhada em
+      <a
+        href="https://www.todamateria.com.br/conjuntos-numericos/#:~:text=Os%20conjuntos%20num%C3%A9ricos%20re%C3%BAnem%20diversos,%C3%A9%20a%20Teoria%20dos%20conjuntos."
+        class="link"
+        >Conjuntos Númericos</a
+      >. A vale ressaltar que a ideia de bijetividade não é satisfeita para o
+      zero, sendo assim não se define divisão por zero. (caso deseje ver o
+      conceito de divisão por zero de uma olhada aqui
+      <a href="https://pt.wikipedia.org/wiki/Divis%C3%A3o_por_zero" class="link"
+        >Divisão por zero</a
+      >.
+    </p>
+    <h3 class="titulo">Representação de uma operação de divisão</h3>
+    <img
+      src="../../assets/img/divisaoPadrao.svg"
+      alt="a dividido por b"
+      class="imagem"
+    />
+    <p class="conteudo">
+      Essa é a forma usual de representar um divisão elementar. Ela pode ser
+      encontrada também na representação de uma fração.
+    </p>
+    <img
+      src="../../assets/img/divisaoFracao.svg"
+      alt="a sobre b"
+      class="imagem"
+    />
+    <p class="conteudo">
+      O primeiro termo ou no caso o número que será dividor chamamos de
+      dividendo, o segundo termo ou o segundo número que será dividido chamamos
+      de divisor. a propriedade fundamental da divisão diz que o divisor deve
+      ser diferente 0. Pois qualquer divisão por 0 gera uma indeterminação.
+    </p>
+  </div>
+</div>
+
+<ng-template #ColocarNumeros>
+  <p class="erro">Digite um número válido</p>
+</ng-template>

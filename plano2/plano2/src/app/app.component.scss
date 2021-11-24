@@ -1,0 +1,39 @@
+@import "../variables.scss";
+.container {
+  height: 100vh;
+  background-color: $lightColor;
+  display: grid;
+  grid-template-rows: 0.3fr auto auto;
+  grid-template-areas:
+    "header header header"
+    "menu component component"
+    "footer footer footer";
+  grid-gap: 10px;
+}
+
+
+.header {
+  grid-area: header;
+}
+
+.conteudo {
+  grid-area: component;
+}
+
+.menu {
+  margin-top: 18vh;
+  grid-area: menu;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: block;
+  }
+  .menu {
+    padding: 0;
+  }
+}

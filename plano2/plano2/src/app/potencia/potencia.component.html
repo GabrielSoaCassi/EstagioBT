@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="potencia-calculo">
+    <div class="centralizador">
+      <form >
+        <label class="campo-form" for="base">Base</label>
+        <input
+          class="input-form"
+          type="number"
+          name="base"
+          id="base"
+          [(ngModel)]="base"
+        />
+        <label class="campo-form" for="expoente">Expoente</label>
+        <input
+          class="input-form"
+          type="number"
+          name="expoente"
+          id="expoente"
+          [(ngModel)]="expoente"
+        />
+      </form>
+      <div class="resultado" *ngIf="base != null && expoente != null ; else ColocarNumeros">
+        <p>{{ base }} ^ {{ expoente }} = {{ calcular(base,expoente) }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="potencia-conteudo">
+    <h1 class="titulo">Potenciação</h1>
+    <p class="conteudo">
+      Potenciação ou Exponenciação é uma operação matemática, escrita como
+      <span>a<sup>n</sup></span
+      >, envolvendo dois número: a base <span>a</span> e o expoente
+      <span>n</span>. quando <span> n</span> é um número natural maior do que 1,
+      a potência <span>a<sup>n</sup></span> indica a multiplicação da base
+      <span>a</span> por ela mesma tantas vezes quanto inidicar o expoente
+      <span>n</span>, isto é.
+    </p>
+
+    <img
+      class="imagem"
+      src="../../assets/img/potenciacao.svg"
+      alt="a elevado n é igual a vezes a vezes ... a-ésimo."
+    />
+  </div>
+</div>
+
+<ng-template #ColocarNumeros>
+  <p class="erro">Digite um número válido</p>
+</ng-template>

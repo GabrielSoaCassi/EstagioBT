@@ -1,0 +1,39 @@
+@import "../../variables.scss";
+
+.container {
+  background: $orange;
+  vertical-align: middle;
+}
+
+img {
+  display: inline;
+  margin-left: 2em;
+  width: 40px;
+}
+
+h1 {
+  position: relative;
+  top: 10%;
+  transform: translateY(-100%);
+  display: inline-block;
+  text-align: center;
+  margin: auto 0;
+  font-size: 1.2;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100vw;
+  }
+
+  h1 {
+    display: block;
+    position: relative;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  img {
+    margin: auto;
+  }
+}

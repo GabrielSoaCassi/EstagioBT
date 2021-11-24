@@ -1,0 +1,100 @@
+.conteudo h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 3em;
+    font-size:2em;
+    text-align:center;
+    padding: 2.5em;
+}
+.conteudo img{
+    margin-bottom: 3vw;
+    width: 87vw;
+    max-width: 500px;
+    margin-left:5vw;
+    margin-right: 5vw;
+    float: left;
+}
+.conteudo p{
+    color: #FEFEFE;
+    padding:1.3em;
+    font-size: 1.1em;
+    text-align: justify;    
+}
+.motivacao{
+    background:linear-gradient(45deg,#053742 , #39A2DB, #A2DBFA);
+    background-size: 150%;
+    animation: colors 5s ease infinite;
+    clear: left;
+}
+.motivacao h3{
+    margin:3em ;
+    padding: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.32em;
+    font-weight: bold;
+}
+.motivacao p{
+    padding:1.3em;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+}
+.center{
+    margin: 0 auto;
+}
+.motivacao__img{
+    margin-bottom: 3em;
+    width: 95vw;
+    max-width: 500px;
+    margin-left:5vw;
+}
+@media(max-width : 600px){
+    .motivacao__img, .conteudo img{
+        width: 100vw;
+        margin: auto;
+        margin-bottom: 3vw;
+    }
+}
+.motivacao ul{
+    display: inline-block;
+    vertical-align: top;
+}
+.motivacao li{
+    padding:1.5em;
+    margin-left: 1em;
+    text-align: center;
+    font-size: 1.09em;
+    font-style: italic;
+    font-weight: bold;   
+}
+.motivacao li:before{
+    content: "∂";
+}
+.video{
+    margin: auto;
+}
+.video h3{
+    margin:3em;
+    padding: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.32em;
+    font-weight: bold;
+}
+.video p{
+    color: #FEFEFE;
+    padding:1.3em;
+    font-size: 1.1em;
+    text-align: center;
+}
+iframe{
+    width: 100%;
+    height: 315px;
+}
+.box-video{
+    width: 100vw;
+    max-width: 560px;
+    margin:2em auto;
+    margin-bottom: 1em;
+}

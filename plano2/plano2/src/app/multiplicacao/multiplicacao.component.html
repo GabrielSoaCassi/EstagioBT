@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="multiplicacao-calculo">
+    <div class="centralizador">
+      <form class="form">
+        <label class="campo-form" for="multiplicando">Multiplicando</label>
+        <input
+          class="input-form"
+          type="number"
+          name="multiplicando"
+          id="multiplicando"
+          [(ngModel)]="multiplicando"
+        />
+
+        <label class="campo-form" for="multiplicador">Multiplicador</label>
+        <input
+          class="input-form"
+          type="number"
+          name="multiplicador"
+          id="multiplicador"
+          [(ngModel)]="multiplicador"
+        />
+      </form>
+      <div
+        class="resultado"
+        *ngIf="(multiplicando != null || multiplicador != null ) ; else ColocarNumeros"
+      >
+        <p>{{ multiplicando }}*{{ multiplicador }} = {{ multiplicar(multiplicando,multiplicador) }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="multiplicacao-conteudo">
+    <h1 class="titulo">Multiplicação</h1>
+    <p class="conteudo">
+      Na matemática, a multiplicação é uma forma simples de se adicionar uma
+      quantidade finita de números iguais. O resultado da multiplicação de dois
+      números é chamado de produto. Ao lado da adição, subtração e divisão, a
+      multiplicação é uma das quatro operações fundamentais da aritmética. Os
+      números sendo multiplicados são chamados de coeficientes ou operandos, e
+      individualmente de multiplicando e multiplicador.
+    </p>
+    <img
+      src="../../assets/img/multiplicacao.svg"
+      alt="Exemplo de uma multiplicação x multiplicando y é igual a y mais y mais y .... mais n-ésimo y"
+      class="imagem"
+    />
+    <p class="conteudo">(lê-se "x vezes y" ou "y adicionado x vezes"</p>
+    <p class="conteudo">
+      Como exemplo temos a operação "3x5" como na imagem abaixo
+    </p>
+    <img
+      src="../../assets/img/multiplicacaoExemplo.svg"
+      alt="3 vezes 5 é igual a 5 mais 5 mais 5 mais 5 que resulta em 15"
+      class="imagem"
+    />
+    <p class="conteudo">
+      Tendo entendido isto faça um teste abaixo coloque o número que desejar em
+      cada um dos campos e realize a multiplicação e veja o resultado
+    </p>
+  </div>
+</div>
+
+<ng-template #ColocarNumeros>
+  <p class="erro">Digite um número válido</p>
+</ng-template>

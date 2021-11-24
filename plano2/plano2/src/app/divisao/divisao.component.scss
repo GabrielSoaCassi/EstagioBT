@@ -1,0 +1,125 @@
+@import "../../variables.scss";
+
+.container {
+  background-color: $lightColor;
+  display: grid;
+  grid-template-areas: "divisao conteudo";
+  min-height: 80vh;
+}
+
+.divisao-calculo {
+  grid-area: divisao;
+  color: $lightColor;
+  background-color: $black;
+}
+
+.divisao-conteudo {
+  background-color: $black;
+  color: $lightColor;
+  border-left: 2px solid $black;
+  grid-area: conteudo;
+  width: 70vw;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+.conteudo {
+  text-align: justify;
+  margin: 0 1em;
+  font-size: 1.25em;
+  padding-bottom: 1em;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 700;
+  color: $orange;
+}
+
+.link:hover {
+  color: $red;
+}
+
+.imagem {
+  display: block;
+  background-color: $lightColor;
+  margin: 0.5em auto;
+}
+
+.centralizador {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.campo-form {
+  display: block;
+  padding-top: 1em;
+  font-weight: 700;
+  margin-left: 0.5em;
+}
+
+.input-form {
+  border-radius: 10px;
+  padding: 5px;
+  margin: 1em;
+}
+
+.botao {
+  background-color: $orange;
+  color: $black;
+  display: block;
+  width: 6em;
+  height: 3em;
+  margin: auto;
+  margin-bottom: 2em;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: 700;
+}
+
+.botao:hover {
+  background: $lightColor;
+  color: $orange;
+}
+
+.resultado {
+  border-radius: 10px;
+  background: $lightColor;
+  color: $black;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
+.erro {
+  background-color: $red;
+  color: $lightColor;
+  text-align: center;
+  font-weight: 700;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .divisao-calculo {
+    width: 100vw;
+    padding-bottom: 1em;
+  }
+
+  .divisao-conteudo {
+    display: block;
+    border-left: none;
+    border-top: 2px solid $black;
+    width: 100vw;
+  }
+}

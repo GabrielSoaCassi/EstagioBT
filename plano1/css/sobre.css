@@ -1,0 +1,23 @@
+.conteudo h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 3em;
+    font-size:2em;
+    text-align:center;
+    padding: 1em;
+}
+.conteudo img{
+    width: 100vw;  
+}
+.conteudo p{
+    color: #FEFEFE;
+    padding:1.3em;
+    font-size: 1.1em;
+    text-align: center;
+}
+.conteudo a{
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F8F;
+}
